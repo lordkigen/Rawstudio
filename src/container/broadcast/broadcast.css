@@ -1,0 +1,130 @@
+.b__container{
+    margin-top: 10rem;
+    display: flex;
+}
+
+.b__container-title{
+    flex: 1;
+}
+
+.b__container-title > h2{
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.b__container-title p {
+    line-height: 1rem;
+    font-weight: 200;
+}
+
+.b__container-inner__container{
+    margin-top: 9rem;
+    flex: 2;
+    display: grid;
+    width: 800px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.broadcast1{
+    grid-column:  2/3;
+}
+
+.broadcast2{
+    grid-row: 2/3;
+}
+
+.broadcast3{
+    grid-column: 3/4;
+    grid-row: -3 /-2;
+}
+
+.broadcast4{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+.inner__container-content {
+    text-align: center;
+}
+
+.inner__container-content  span{
+    display: block;
+    margin: 1rem auto;
+}
+
+.inner__container-content span:nth-child(2){
+    font-weight: var(--fnt-bold);
+    font-size: 24px;
+}
+
+.inner__container-content span:nth-child(3){
+    font-weight: 200;
+    font-size: 12px;
+    width: 70%;
+}
+
+.broadcast-icon{
+     color: var(--primary-pink);
+     font-size: 2rem;
+}
+
+
+@media screen and (max-width: 1024px){
+    .b__container-title > h2{
+        font-size: 35px;
+        margin-bottom: 3rem;
+    }
+    
+    .b__container-title p{
+        font-size: 13px;
+    }
+
+    .b__container-inner__container{
+    margin-top: 10em;
+    width: fit-content;
+    }
+    
+    .inner__container-content span:nth-child(2){
+        font-weight: var(--fnt-bold);
+        font-size: 20px;
+    }
+
+    .inner__container-content span:nth-child(3){
+        font-weight: 200;
+        font-size: 10px;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+   .b__container{
+    flex-direction: column;
+   }
+}
+
+
+@media screen and (max-width: 600px){
+     .inner__container-content span:nth-child(2){
+        font-weight: var(--fnt-bold);
+        font-size: 17px;
+        width: 100%;
+    }
+
+    .b__container{
+        text-align: center;
+    }
+
+    .b__container-title >h2{
+        font-size: 30px;
+        margin-bottom: 1rem;
+    }
+    .b__container-title p{
+        line-height: 1.2rem;
+        font-weight: 200;
+    }
+}
+
+

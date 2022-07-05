@@ -1,0 +1,362 @@
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.h__container-inner{
+    display: flex;
+    margin: auto;
+    position: relative;
+}
+
+.left__container{
+    flex: 1;
+    margin-top: 6rem;
+    position: relative;
+}
+
+.left__container-intro >h2{
+    font-size: 55px;
+}
+
+.left__container-intro h2 >span:nth-child(1){
+    color: var(--primary-pink);
+}
+
+.left__container-intro h2 >span:nth-child(3){
+    background: var(--text__gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.left__container > p{
+    margin: 1rem 0;
+    font-size: 14px;
+    font-weight: var(--fnt-regular);
+    width: 85%;
+}
+
+.herobtn{
+    border-radius:  18px 0px 18px 0px;
+    border: 0;
+    outline: 0;
+    background: var(--button__gradient);
+    color: var(--text-white);
+    transition: 500ms ease;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.herobtn__icon{
+    margin-left: .2rem;
+    font-size: 18px;
+}
+
+.herobtn:hover{
+    background: #FA47A7;
+    transition: 400ms ease;
+    border-radius:  15px;
+}
+
+.left__container-stats{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.stats__content{
+    margin-right: 2.5rem;
+}
+
+.stats__content >span{
+    display: block;
+    text-align: center;
+}
+
+.stats__content >span:nth-child(1){
+    font-weight: var(--fnt-bold);
+    font-size: 1.4rem;
+}
+
+.stats__content >span:nth-child(2){
+    font-weight: 200;
+    font-size: .8rem;
+    color: var(--text-gray);
+}
+
+.signature__container{
+    width: 100px;
+    position: absolute;
+    right: -35%;
+    top: 36%;
+}
+
+/* right container */
+.right__container{
+    flex: 2;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right__container-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+    width: 85%;
+}
+
+.right__container-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+   margin-left: 9rem;
+}
+
+.btn-1{
+     margin: 0;
+}
+
+.btn-2{
+    margin: 0;
+    background: transparent;
+  border: 1px solid var(--text-gray);
+}
+
+.imgbtns{
+    height:  2.5rem;
+    width:  6rem;
+    margin-top: -2.5rem;
+    font-size:  11px;
+}
+
+/* media queries */
+@media screen and (max-width: 1024px){
+    .left__container-intro >h2{
+        font-size: 40px;
+    }
+
+    .left__container > p{
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .signature__container{
+        width: 80px;
+        position: absolute;
+        right: -19%;
+        top:45%;
+    }
+
+    .right__container{
+        flex: 1.5;
+    }
+
+    .right__container-img{
+        width: 99%;
+    }
+
+    .herobtn{
+        height: 2.6rem;
+        width: 7rem;
+    }
+
+    .imgbtns{
+        height:  2rem;
+        width:  5.5rem;
+        margin-top: -1rem;
+        font-size:  11px;
+    }
+    .right__container-buttons{
+        gap: 1.5rem;
+        margin-left: 5rem;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .left__container-intro >h2{
+        font-size: 35px;
+    }
+
+    .left__container > p{
+        font-size: 12px;
+        font-weight: var(--fnt-regular);
+        width: 100%;
+    }
+
+    .signature__container{
+        width: 60px;
+        right: -20%;
+        top: 50%;
+    }
+
+    .stats__content >span:nth-child(1){
+        font-size: 1rem;
+    }
+
+    .stats__content >span:nth-child(2){
+        font-size: .6rem;
+    }
+
+    .right__container{
+        flex: 1.5;
+    }
+
+    .right__container-img{
+        width: 100%;
+    }
+
+    .herobtn{
+        height: 2.3rem;
+        width: 6.5rem;
+    }
+
+   .imgbtns{
+        height:  1.5rem;
+        width:  4.5rem;
+        margin-top: -1rem;
+        font-size:  8px;
+    }
+
+    .right__container-buttons{
+        gap: 1.5rem;
+        margin-left: 4rem;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+       .left__container-intro >h2{
+            font-size: 30px;
+        }
+
+        .left__container > p{
+            font-size: 11px;
+        }
+
+        .signature__container{
+            width: 50px;
+            position: absolute;
+            right: -10%;
+        }
+
+        .stats__content >span:nth-child(1){
+            font-size: .9rem;
+        }
+
+        .stats__content >span:nth-child(2){
+            font-size: .5rem;
+        }
+
+        .right__container-buttons{
+            margin-left: 0;
+            gap: 1rem;
+        }
+
+        .imgbtns{
+            height:  1.5rem;
+            width:  4rem;
+            font-size:  6px;
+        }
+
+        .btn0{
+            width: 6rem;
+            height: 2rem;
+            font-size: 12px;
+        }       
+}
+
+@media screen and (max-width: 425px){
+       .h__container-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        }
+
+        .signature__container{
+            display: none;
+        }
+
+       /* left container */
+        .left__container{
+            flex: initial;
+            margin-top: 3rem;
+            position: relative;
+        }
+        .left__container-intro{
+            text-align: center;
+        }
+
+        .left__container-intro >h2{
+            font-size: 38px;
+        }
+
+        .left__container > p{
+            font-size: 14px;
+            width: 100%;
+            margin: 1rem auto;
+            text-align: center;
+            font-size: 200;
+        }
+
+        .btn0{
+            height: 3rem;
+            width: 8rem;
+            margin: 1rem  auto;
+        }
+
+        .left__container-stats{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+        }
+        .stats__content{
+            margin-right: unset;
+        }
+
+        .stats__content >span{
+            display: block;
+            text-align: center;
+        }
+
+        .stats__content >span:nth-child(1){
+            font-size: 1.4rem;
+        }
+
+        .stats__content >span:nth-child(2){
+            font-size: .8rem;
+        }
+
+        /* right container */
+        .right__container{
+            flex: unset;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .right__container-img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+            width: 100%;
+            margin-right: 3rem;
+        }
+
+         .imgbtns{
+        height:  2.2rem;
+        width:  5.5rem;
+        margin-top: 1rem;
+        font-size:  11px;
+    }
+
+
+}

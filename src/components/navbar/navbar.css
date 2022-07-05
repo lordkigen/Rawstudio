@@ -1,0 +1,223 @@
+.n__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.n__container-logo{
+    display: flex;
+    align-items: center;
+}
+
+.n__container-logo > span{
+    display: block;
+    font-style: italic;
+    color: var(--primary-pink);
+    margin-left: 5px;
+    font-size: 19px;
+}
+
+.n__container-nav{
+    display: flex;
+    align-items: center;
+}
+
+.n__container-nav > li{
+    margin: 0 20px;
+}
+
+.n__container-nav > li:hover{
+    transform: scale(.99);
+    transition: 400ms ease-in;
+}
+
+.n__container-nav li >a{
+    color: var(--text-lightblue);
+    font-weight: var(--fnt-regular);
+    font-size: 15px;
+}
+
+.n__container-nav li >a:hover{
+    color: hsl(328, 95%, 78%);
+    cursor: pointer;
+}
+
+.n__container-account{
+    display: flex;
+    align-items: center;
+}
+
+.n__container-account > li{
+    color: var(--text-lightblue);
+    font-size: 15px;
+}
+
+
+.n__container-account > span{
+    height: 1rem;
+    width: 2px;
+    display: block;
+    background: #FFF5FA;
+    margin: 0 1rem;
+}
+
+.n__container-account >li:hover{
+    color: hsl(328, 95%, 78%);
+    cursor: pointer;
+    transform: scale(.99);
+}
+
+ .openmenu{
+        display: none;
+}
+
+.n__container-nav__mobile{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .n__container-logo > img{
+      width: 30px;
+    }
+
+    .n__container-nav li >a{
+    font-size: 14px;
+    }
+
+    .n__container-account > li{
+    color: var(--text-lightblue);
+    font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .n__container-nav{
+        display:  none;
+    }
+
+     .openmenu{
+        display: flex;
+        width: 22px;
+        display: flex;
+        align-items: center;
+        transition: 300ms;
+    }
+
+    .openmenu > img{
+        width: 100%;
+    }
+    
+    .closemenu{
+        width: 22px;
+        display: flex;
+        align-items: center;
+    }
+    .closemenu >img{
+        width: 100%;
+        transform: scale(.7);
+    }
+
+    .n__container{
+    justify-content:  flex-end; 
+    }
+
+    .n__container-logo{
+        margin-right: auto;
+    }
+
+    .n__container-account{
+      margin-right: 1rem;
+    }
+
+    .n__container-nav__mobile{
+        display: initial;
+        position: fixed;
+        background-color: #141414;
+        top: 50px;
+        right: 3%;
+        border-radius: 18px;
+        padding: 2rem 1rem;
+        width: 120px;
+    }
+
+    .n__container-nav__mobile > li{
+        text-align: left;
+        align-items: flex-start;
+        margin-bottom: .5rem;
+        font-size: 13px;
+    }
+    
+    .n__container-nav__mobile li > a{
+        color: var(--text-lightblue);
+    }
+
+    .n__container-account__mobile{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .n__container-account{
+        display: none;
+    }  
+
+    .n__container-logo > img{
+      width: 29px;
+    }
+
+    .n__container-logo > span{
+       display: none;
+    }
+    
+    .n__container-nav__mobile{
+        z-index: 1000;
+    }
+
+    .n__container-nav__mobile > li{
+        font-size: 15px;
+    }
+
+     .n__container-account__mobile{
+        display:  flex;
+        flex-direction: column;
+    }
+   
+    .n__container-account__mobile >li{
+        margin-bottom: .5rem;
+    }
+    .n__container-account__mobile > li:nth-child(1){
+        order: 2;
+    }
+    
+    .n__container-account__mobile >li:nth-child(1){
+        background-color: var(--primary-pink);
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        padding: 7px;
+    }
+
+}
+
+.slide-top {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(19%);
+            transform: translateY(19%);
+  }
+  100% {
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%);
+            transition: 300ms ease;
+  }
+}
+
+

@@ -1,0 +1,30 @@
+.A__container{
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.A__container h2{
+    font-size: 40px;
+}
+
+.cards__container{
+    margin-top: 5rem;
+    display: grid;
+}
+
+.userprofile__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.userprofile__container-inner{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 425px) {
+    .A__container h2{
+    font-size: 30px;
+}
+}

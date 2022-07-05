@@ -1,0 +1,116 @@
+.Ac__container{
+    background: var(--card-color);
+    width: 500px;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    justify-self: center;
+}
+
+.userprofile__container img{
+    width: 50px;
+}
+
+
+.userprofile__inner-container{
+     margin: 0 .8rem;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+}
+
+.userprofile__inner-container >span{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.userprofile__inner-container > small{
+    color: #999999;
+}
+
+.badgeicon{
+    color: #12CEF8;
+}
+
+.profile__container-cover{
+  margin-top: 2rem ;
+  margin-bottom: 1rem;
+}
+
+
+.profile__container-cover {
+    height: 60px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.profile__container-cover img{
+    object-fit: cover;
+    height: 60px;
+    object-position: center;
+}
+
+
+/* btns */
+.btnA{
+    padding: .5rem 2.3rem;
+    border: 0;
+    outline: 0;
+    border-radius: .7rem;
+    background-color: var(--primary-pink);
+    color: var(--text-lightblue);
+}
+
+.btnA:hover{
+   background-color: var(--btn-hover);
+   cursor: pointer;
+}
+
+.cards__container{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(500px, 2fr) );
+    row-gap: 5rem;
+}
+
+
+@media screen and (max-width: 1024px){
+    .Ac__container{
+        width: 400px;
+    }
+
+    .cards__container{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(400px, 2fr) );
+        row-gap: 5rem;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .Ac__container{
+        width: 370px;
+        transform: scale(.8);
+    }
+
+    .cards__container{
+        grid-template-columns: repeat( auto-fit, minmax(250px, 2fr) );
+    }
+
+}
+
+
+@media screen and (max-width: 425px){
+    .Ac__container{
+        width: 370px;
+        transform: scale(.8);
+    }
+
+    .cards__container{
+        row-gap: 0rem;
+        grid-template-columns: repeat( auto-fit, minmax(250px, 2fr) );
+    }
+
+}
